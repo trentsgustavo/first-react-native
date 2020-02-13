@@ -3,6 +3,7 @@ module.exports = {
     es6: true,
   },
   extends: [
+    'plugin:react/recommended',
     'airbnb',
     'prettier',
     'prettier/react'
@@ -10,7 +11,6 @@ module.exports = {
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
-    __DEV__: 'readonly'
   },
   parser: 'babel-eslint',
   parserOptions: {
@@ -28,9 +28,7 @@ module.exports = {
     'prettier/prettier': 'error',
     'react/jsx-filename-extension': [
       'warn',
-      {
-        extensions: ['.jsx', '.js']
-      }
+      {extensions: ['.jsx', '.js']}
     ],
     'import/prefer-default-export': 'off',
   },
